@@ -31,9 +31,9 @@ es par o no, la respuesta será mostrada en un Alert. */
 
 let number = parseInt(prompt("Por favor ingresa un número"));
 
-if((number %2) == 0 ){
+if ((number % 2) == 0) {
     alert(`El número ${number} ingresado es un número par`);
-} else{
+} else {
     alert(`El número ${number} ingresado es un número impar`);
 }
 
@@ -41,33 +41,33 @@ if((number %2) == 0 ){
 /* Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir
 "Ganaste un premio", en caso contrario mostrar el número y el mensaje
 “Lo sentimos, sigue participando”.*/
- 
+
 
 let numeroCliente = parseInt(prompt("Por favor ingrese un número de cliente"));
 
-if(numeroCliente == 1000){
+if (numeroCliente == 1000) {
     console.log("¡Felicidades, Ganaste un premio!");
 
-}else{
+} else {
     console.log(`Lo sentimos, el número de cliente ingresado: ${numeroCliente}  no es el ganador, sigue participando`);
-} 
+}
 
 /* Ejercicio 5 */
 /* Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es
-menor. No considerar el caso en que ambos números son iguales.*/ 
+menor. No considerar el caso en que ambos números son iguales.*/
 
 let numeroUno = parseInt(prompt("Ingrese por favor el valor del número uno"));
 let numeroDos = parseInt(prompt("Ingrese por favor el valor del número dos"));
 
-if(numeroUno > numeroDos){
+if (numeroUno > numeroDos) {
     console.log(`El número dos ${numeroDos} es menor al número uno ingresado: ${numeroUno}`);
 
-} else if (numeroDos < numeroUno){
+} else if (numeroDos < numeroUno) {
     console.log(`El número uno ${numeroUno} es menor al número dos ingresado: ${numeroDos}`);
 
-} else if (numeroDos > numeroUno){
+} else if (numeroDos > numeroUno) {
     console.log(`El número uno ${numeroUno} es menor al número dos ingresado: ${numeroDos}`);
-} 
+}
 
 /* Ejercicio 6 */
 /* Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es
@@ -99,17 +99,17 @@ diferente si es sábado o domingo. Si el día ingresado no es ninguno de
 esos, imprimir otro mensaje*/
 
 let diaSemana = prompt("Ingrese el dia de la semana de su preferencia sólo minúsculas sin tildes)");
-if(diaSemana =="lunes"){
+if (diaSemana == "lunes") {
     console.log("Bienvenido al día Lunes");
-}else if(diaSemana =="viernes"){
+} else if (diaSemana == "viernes") {
     console.log("Hoy es viernes!");
-}else if(diaSemana =="sabado"){
+} else if (diaSemana == "sabado") {
     console.log("Hoy es sabado!");
 
-}else if(diaSemana =="domingo"){
+} else if (diaSemana == "domingo") {
     console.log("Hoy es domingo fin de la semana!");
 
-}else{
+} else {
     console.log("El dia seleccionado es martes, miercoles o jueves")
 }
 
@@ -122,17 +122,17 @@ calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si
 
 let calificacion = parseInt(prompt("Ingrese su calificación"));
 
-if(calificacion < 6){
+if (calificacion < 6) {
     console.log("Reprobado");
-}else if(calificacion <= 8){
+} else if (calificacion <= 8) {
     console.log("Regular");
-}else if(calificacion == 9){
+} else if (calificacion == 9) {
     console.log("Bien");
-} else if(calificacion == 10) {
+} else if (calificacion == 10) {
     console.log("excelente");
-} else{
-  console.error("El rango ingresado es incorrecto");
-} 
+} else {
+    console.error("El rango ingresado es incorrecto");
+}
 
 /* Ejercicio 9*/
 /* Escribe un programa que responda a un usuario que quiere comprar un
@@ -145,17 +145,17 @@ función del topping que elija.
 En caso de no disponer del topping solicitado por el usuario, el programa
 le indicará “no tenemos este topping, lo sentimos.” y a continuación le
 informará el precio del helado sin ningún topping. */
- 
+
 
 alert("Hola, bienvenido a nuestra heladería!, Selecciona una de nuestras especialidades de topping!: oreo | kitkat | brownie");
 
 let toppingSeleccionado = prompt("Ingresa el nombre del topping que deseas (oreo | kitkat | brownie)");
 
-if(toppingSeleccionado == "oreo"){
+if (toppingSeleccionado == "oreo") {
     alert("El topping de oreo que seleccionaste tiene un costo de 10 pesos MXN");
-} else if(toppingSeleccionado == "kitkat"){
+} else if (toppingSeleccionado == "kitkat") {
     alert("El topping de kitkat que seleccionaste tiene un costo de 15 pesos MXN");
-} else if(toppingSeleccionado == "brownie"){
+} else if (toppingSeleccionado == "brownie") {
     alert("El topping de brownie tiene un costo de 20 pesos MXN");
 } else {
     alert("No tenemos este topping, lo sentimos, El valor del helado sin topping es de 50 pesos MXN");
@@ -205,50 +205,50 @@ if (nivelEducativo == "course" && beca == "facebook") {
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 20% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 20% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo =="course" && beca =="google"){
+} else if (nivelEducativo == "course" && beca == "google") {
     valorPagoMensual = (costoCourse) - (costoCourse * descuentoGoogle);
     valorTotal = (costoCourse * duracionCourse) - (costoCourse * duracionCourse * descuentoGoogle);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 15% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 15% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo == "course" && beca == "jesua"){
+} else if (nivelEducativo == "course" && beca == "jesua") {
     valorPagoMensual = (costoCourse) - (costoCourse * descuentoJesua);
     valorTotal = (costoCourse * duracionCourse) - (costoCourse * duracionCourse * descuentoJesua);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
 
-} else if(nivelEducativo == "carrera" && beca == "facebook"){
+} else if (nivelEducativo == "carrera" && beca == "facebook") {
     valorPagoMensual = (costoCarrera) - (costoCarrera * descuentoFacebook);
     valorTotal = (costoCarrera * duracionCarrera) - (costoCarrera * duracionCarrera * descuentoFacebook);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
-}  else if(nivelEducativo == "carrera" && beca == "google"){
+} else if (nivelEducativo == "carrera" && beca == "google") {
     valorPagoMensual = (costoCarrera) - (costoCarrera * descuentoGoogle);
     valorTotal = (costoCarrera * duracionCarrera) - (costoCarrera * duracionCarrera * descuentoGoogle);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo == "carrera" && beca == "jesua"){
+} else if (nivelEducativo == "carrera" && beca == "jesua") {
     valorPagoMensual = (costoCarrera) - (costoCarrera * descuentoJesua);
     valorTotal = (costoCarrera * duracionCarrera) - (costoCarrera * duracionCarrera * descuentoJesua);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo == "master" && beca == "facebook"){
+} else if (nivelEducativo == "master" && beca == "facebook") {
     valorPagoMensual = (costoMaster) - (costoMaster * descuentoFacebook);
     valorTotal = (costoMaster * duracionMaster) - (costoMaster * duracionMaster * descuentoFacebook);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo == "master" && beca == "google"){
+} else if (nivelEducativo == "master" && beca == "google") {
     valorPagoMensual = (costoMaster) - (costoMaster * descuentoGoogle);
     valorTotal = (costoMaster * duracionMaster) - (costoMaster * duracionMaster * descuentoGoogle);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
     console.log(`El valor total a pagar por el programa ${nivelEducativo} es ${valorTotal} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
 
-} else if(nivelEducativo == "master" && beca == "jesua"){
+} else if (nivelEducativo == "master" && beca == "jesua") {
     valorPagoMensual = (costoMaster) - (costoMaster * descuentoJesua);
     valorTotal = (costoMaster * duracionMaster) - (costoMaster * duracionMaster * descuentoJesua);
     console.log(`El valor mensual a pagar por el programa seleccionado ${nivelEducativo} es ${valorPagoMensual} se ha aplicado un descuento del 50% segun el beneficio de la beca ingresada: ${beca}`)
@@ -276,29 +276,29 @@ let tipoVehiculo = prompt("Ingrese el tipo de vehículo (coche, moto, autobus)")
 let kilometrosRecorridos = parseInt(prompt("Ingrese los kilometros recorridos"));
 let litrosConsumidos = parseInt(prompt("Ingrese los litros consumidos"));
 
-if(tipoVehiculo == "coche" && litrosConsumidos >=0 && litrosConsumidos <=100 ){
-    let totalPago = (precioKilometroCoche*kilometrosRecorridos) + 5;
+if (tipoVehiculo == "coche" && litrosConsumidos >= 0 && litrosConsumidos <= 100) {
+    let totalPago = (precioKilometroCoche * kilometrosRecorridos) + 5;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 
-} else if(tipoVehiculo == "coche" && litrosConsumidos >100){
-    let totalPago = (precioKilometroCoche*kilometrosRecorridos) + 10;
+} else if (tipoVehiculo == "coche" && litrosConsumidos > 100) {
+    let totalPago = (precioKilometroCoche * kilometrosRecorridos) + 10;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 
-} else if(tipoVehiculo =="autobus" && litrosConsumidos >=0 && litrosConsumidos <=100){
-    let totalPago = (precioKilometroAutobus*kilometrosRecorridos) +5;
+} else if (tipoVehiculo == "autobus" && litrosConsumidos >= 0 && litrosConsumidos <= 100) {
+    let totalPago = (precioKilometroAutobus * kilometrosRecorridos) + 5;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 
-} else if(tipoVehiculo == "autobus" && litrosConsumidos >100){
-    let totalPago = (precioKilometroAutobus*kilometrosRecorridos) + 10;
+} else if (tipoVehiculo == "autobus" && litrosConsumidos > 100) {
+    let totalPago = (precioKilometroAutobus * kilometrosRecorridos) + 10;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 
-} else if(tipoVehiculo =="moto" && litrosConsumidos >=0 && litrosConsumidos <=100){
-    let totalPago = (precioKilometroMoto*kilometrosRecorridos) +5;
+} else if (tipoVehiculo == "moto" && litrosConsumidos >= 0 && litrosConsumidos <= 100) {
+    let totalPago = (precioKilometroMoto * kilometrosRecorridos) + 5;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 }
 
-else if(tipoVehiculo == "moto" && litrosConsumidos >100){
-    let totalPago = (precioKilometroMoto*kilometrosRecorridos) + 10;
+else if (tipoVehiculo == "moto" && litrosConsumidos > 100) {
+    let totalPago = (precioKilometroMoto * kilometrosRecorridos) + 10;
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
     console.log(`El total a pagar por la distancia recorrida: ${kilometrosRecorridos} es: ${totalPago}`)
 }
